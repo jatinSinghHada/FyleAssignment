@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="view1">
+        <div class="box1">
+            <div class="box1-text">
+                <h2 style="color: red" ;>Award Winning</h2>
+                <h1 style="color: black;">DIGITAL MARKETING <br> AGENCY </h1>
+                <p style="color: black" ;>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Aperiam alias sunt nesciunt in esse eum consequatur, <br>recusandae consectetur
+                    nam rerum error autem ea molestias <br>labore, quo enim? Pariatur, saepe reiciendis.</p><br><br>
+                <button id="contactBtn">CONTACT US</button>
+            </div>
+
+            <div class="view1-img"></div>
+        </div>
+    </div>
+
+    <!-- Point 2 : Popup Form -->
+
+    <div id="popupForm" class="popup-form">
+        <div class="form-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2>Talk to Us</h2>
+            <form id="contactForm" action="https://getform.io/f/pboxjega" method="POST">
+                <input type="email" id="email" name="email" required placeholder="Work email"><br><br>
+                <div class="name-container">
+                    <input type="text" id="firstName" name="firstName" required placeholder="First Name*">
+                    <input type="text" id="lastName" name="lastName" required placeholder="Last Name*">
+                </div><br>
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">I agree to Fyle's terms and conditions, and provide consent to send me
+                    communication.</label><br><br>
+                <input type="submit" value="Contact Us" class="submit-btn">
+                <input type="hidden" name="_gotcha" style="display:none !important">
+            </form>
+        </div>
+    </div>
+
+    <div id="successPopup" class="popup-form">
+        <div class="form-content">
+            <h2>Form Submitted Successfully</h2>
+            <button id="okBtn">OK</button>
+        </div>
+    </div>
+
+    <!-- Point 3 : What we do section -->
+
+    <div class="content">
+        <h2 class="heading" style="color: red;">What We Do</h2>
+        <h1 class="heading">SERVICES PROVIDE<br> FOR YOU</h1>
+        <p class="paragraph">Here is a brief description of what we do. This text can be a few sentences <br>long, providing an overview of the services or activities described in the slider below.</p>
+    </div>
+    
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide" id="slide1">
+                <img src="image1.jpg" alt="Image 1">
+                <div class="overlay-content">
+                    <i class="fas fa-browser"></i>
+                    <h1>This is a Design</h1>
+                    <p>This is a paragraph explaining the design.</p>
+                    <button onclick="window.open('https://fylehq.com', '_blank')">Read more</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image2.jpg" alt="Image 2">
+                <div class="overlay-content">
+                    <i class="fas fa-browser"></i>
+                    <h1>This is a Design</h1>
+                    <p>This is a paragraph explaining the design.</p>
+                    <button onclick="window.open('https://fylehq.com', '_blank')">Read more</button>
+                </div>
+            </div>
+            <div class="slide design">
+                <div class="overlay-content">
+                    <i class="fas fa-browser"></i>
+                    <h1>This is a Design</h1>
+                    <p>This is a paragraph explaining the design.</p>
+                    <button onclick="window.open('https://fylehq.com', '_blank')">Read more</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image4.jpg" alt="Image 4">
+                <div class="overlay-content">
+                    <i class="fas fa-browser"></i>
+                    <h1>This is a Design</h1>
+                    <p>This is a paragraph explaining the design.</p>
+                    <button onclick="window.open('https://fylehq.com', '_blank')">Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="dots-container"></div>
+    </div>
+    
+    
+    <!-- Point 4 : 'OUR PROJECT -->
+
+    <div class="content2">
+        <h2 style="color: red;">OUR PROJECT</h2>
+        <h1>WHY WE ARE BEST</h1>
+    </div>
+
+    <div class="project-section">
+        <div class="project-image-container">
+            <img src="pic9.jpg" alt="Project Image" id="project-image">
+        </div>
+        <div class="project-content">
+            <div class="content-box" data-category="strategy">
+                <a href="#" class="project-link">Quality & Strategy</a>
+                <p>Lorem ipsum dolor, sit amet consectetur<br> adipisicing elit. Minus natus tempora<br> aspernatur enim iste deserunt! Mollitia</p>
+            </div>
+            <div class="content-box" data-category="coffee">
+                <a href="#" class="project-link">Coffee</a>
+                <p>Lorem ipsum dolor, sit amet consectetur<br> adipisicing elit. Minus natus tempora<br> aspernatur enim iste deserunt! Mollitia</p>
+            </div>
+            <div class="content-box" data-category="sports">
+                <a href="#" class="project-link">Sports</a>
+                <p>Lorem ipsum dolor, sit amet consectetur<br> adipisicing elit. Minus natus tempora<br> aspernatur enim iste deserunt! Mollitia</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Point 5 : Highlight on hover -->
+
+    <div class="point5">
+        <h3 style="color: red;">EXPERTS GROWTH</h3>
+        <h1>OUR COMPANY GROWTH</h1>
+    </div>
+
+    <div class="cards">
+        <div class="box">
+            <i class="fa-solid fa-heart fa-2x" style="color: red;"></i>
+            <h1>199 +</h1>
+            <h4>Satisfied Customers</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-clock" style="color: red;"></i>
+            <h1>1591 +</h1>
+            <h4>Days of Operation</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-circle-check" style="color: red;"></i>
+            <h1>283 +</h1>
+            <h4>Complete Request</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-trophy" style="color: red;"></i>
+            <h1>75 +</h1>
+            <h4>Win Awards</h4>
+        </div>
+    </div>
+
+    
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
